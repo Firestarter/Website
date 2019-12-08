@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   votervotes = 0;
 
   ip = 'firestartermc.com';
-  color = '#FF8C27';
+  color = '#FF5B5B';
   online = 0;
   tempcontent = '### So, why did we make this site?\n' +
     'Because why not? This is the new site and it is very cool and you are encouraged to use it because it is so cool\n' +
@@ -75,7 +75,7 @@ export class HomeComponent implements OnInit {
     // Reset back to normal after 2 seconds
     setTimeout(() => {
       this.ip = 'firestartermc.com';
-      this.color = '#FF8C27';
+      this.color = '#FF5B5B';
     }, 2000);
   }
 

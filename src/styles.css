@@ -34,7 +34,7 @@ code {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d46f17;
+  background: #FF5B5B;
   border-radius: 1em;
   transition: 0.3s;
 }
