@@ -1,0 +1,28 @@
+.container {
+  padding-top: 30px;
+}
+.content {
+  color: #fafafa;
+}
+.video {
+  width: 100%;
+}
+
+.content p {
+  font-size: 16px !important;
+}
+
+.content code {
+   color: #FF8C27 !important;
+ }
+
+.separator {
+  border-top: 1px solid #8f8f8f;
+}
+.banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  margin-bottom: 20px;
+}

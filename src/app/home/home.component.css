@@ -1,0 +1,183 @@
+.banner {
+  background-color: #ff5757;
+  background-image: url('../../assets/img/banner-blurred.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: block;
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.3);
+}
+.hero {
+  position: relative;
+  top: 70px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-header {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+}
+.banner-description {
+  color: #EBEBEB;
+  padding-bottom: 20px;
+}
+.content {
+  display: block;
+  margin: 0 auto;
+  background-color: #FBFBFB;
+  width: 80%;
+  height: auto;
+  color: white;
+  padding: 40px 50px;
+  border-radius: 1em;
+  box-shadow: 0px 3px 17px 0px rgba(0,0,0,0.16);
+  position: relative;
+  top: -200px;
+  transition: 0.3s;
+}
+.header {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #727272;
+}
+.sidebar-card {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.05);
+  border-radius: 0.6em;
+  color: black;
+  margin-bottom: 25px;
+}
+.post {
+  background-color: white;
+  padding: 35px;
+  margin-bottom: 25px;
+  box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.05);
+  border-radius: 1em;
+}
+.title {
+  background-color: #ff4141;
+  padding: 10px;
+  border-radius: 0.3em;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.1);
+}
+.post-content {
+  color: black;
+  padding-top: 10px;
+}
+.ip-button {
+  text-align: center;
+  display: block;
+  max-width: 230px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 13px 6px 13px;
+  border-radius: 4px;
+  color: white !important;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.05);
+  transition: 0.3s;
+}
+.ip-button:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(50,50,93,.2), 0 1px 3px rgba(0,0,0,.10);
+}
+.counter {
+  padding-top: 7px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  animation: fadeIn 2s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.sidebar-online {
+  background-color: #5ae67d;
+  color: white;
+  box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.4em;
+  margin-bottom: 25px;
+}
+.post-banner {
+  display: block;
+  max-width: 400px;
+}
+.voter-title {
+  font-weight: 700;
+  color: #4f4f4f;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.voter-head {
+  transition: 0.3s;
+  max-width: 60px;
+  border-radius: 0.3em;
+}
+.voter-name {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+.voter-votes {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ffeeeb;
+  text-align: center;
+  border-radius: 1em;
+}
+.discord-card {
+  border-radius: 1em;
+  box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.05);
+}
+.discord-logo {
+  max-width: 100px;
+}
+.discord-sidebar {
+  background-color: #7289da;
+}
+.discord-button {
+  float: right;
+  color: white;
+  background-color: #7b93e8;
+  padding: 5px 20px;
+  border-radius: 1em;
+  position: relative;
+  top: -4px;
+}
+.discord-button:hover {
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styles between extra small to large */
+@media (min-width: 0px) and (max-width: 991.98px) {
+  .content {
+    width: 100%;
+    padding: 30px 25px;
+  }
+}
+

@@ -1,0 +1,12 @@
+.container {
+  padding: 20px;
+}
+#head {
+  color: white;
+  text-align: center;
+  font-size: 90px;
+}
+#smalltext {
+  color: white;
+  text-align: center;
+}

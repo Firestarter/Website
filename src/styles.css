@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:400,500,600,700,800&display=swap');
+
+* {
+  user-select: none;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-color: #EBEBEB;
+  margin: 0;
+}
+router-outlet ~ * {
+  position: absolute;
+  width: 100%;
+}
+
+code {
+  color: #FF8C27;
+  background-color: #2b2b2b;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #EBEBEB;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d46f17;
+  border-radius: 1em;
+  transition: 0.3s;
+}
