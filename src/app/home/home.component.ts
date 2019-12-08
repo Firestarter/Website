@@ -21,6 +21,8 @@ export class HomeComponent implements OnInit {
   voteruuid = 'e4ae86d8-8040-4e76-a3b3-ba0fba1caf69';
   votervotes = 0;
 
+  discordonline = 0;
+
   ip = 'firestartermc.com';
   color = '#FF5B5B';
   online = 0;
@@ -39,6 +41,12 @@ export class HomeComponent implements OnInit {
     this.http.get('https://api.minetools.eu/ping/firestartermc.com')
       .subscribe((data: Config) => {
         this.online = data['players']['online'];
+      });
+
+    // Update Discord online count
+    this.http.get('https://discordapp.com/api/guilds/609452308161363995/widget.json')
+      .subscribe((data: Config) => {
+        this.discordonline = data['members'].length;
       });
 
     // Update voter information

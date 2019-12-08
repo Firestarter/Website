@@ -47,21 +47,20 @@
 }
 .sidebar-card {
   background-color: white;
-  padding: 30px;
-  box-shadow: 0px 3px 19px 0px rgba(0,0,0,0.05);
-  border-radius: 0.6em;
-  color: black;
+  padding: 20px;
+  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 0.4em;
   margin-bottom: 25px;
 }
 .post {
   background-color: white;
   padding: 35px;
   margin-bottom: 25px;
-  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.02);
   border-radius: 0.7em;
 }
 .title {
-  background-color: #5DA9FF;
+  background-color: #ff626b;
   padding: 10px;
   border-radius: 0.3em;
   font-size: 18px;
@@ -103,7 +102,7 @@
   animation-fill-mode: forwards;
 }
 .sidebar-online {
-  background-color: #FF5B5B;
+  background-color: #FF737E;
   color: white;
   box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -118,8 +117,8 @@
 }
 .voter-title {
   font-weight: 700;
-  color: #4f4f4f;
-  font-size: 24px;
+  color: #424242;
+  font-size: 18px;
   padding-bottom: 10px;
 }
 .voter-head {
@@ -130,18 +129,21 @@
 .voter-name {
   padding: 0;
   margin: 0;
-  font-size: 22px;
-  text-align: center;
-  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  color: #383838;
+  font-weight: 600;
+  padding-left: 5px;
 }
 .voter-votes {
   padding: 0;
   margin: 0;
   font-size: 20px;
-  font-weight: 600;
-  background-color: #ffeeeb;
-  text-align: center;
+  font-weight: 500;
+  color: #80DBDB;
+  text-align: left;
   border-radius: 1em;
+  padding-left: 5px;
 }
 .discord-logo {
   max-width: 100px;
@@ -150,20 +152,12 @@
   margin-top: 0;
   border-radius: 0 0 0.4em 0.4em;
   padding: 20px;
-  background-color: #7289da;
+  background-color: #AE73FF;
   margin-bottom: 25px;
 }
-.discord-button {
+.discord-online {
   float: right;
   color: white;
-  background-color: #7b93e8;
-  padding: 5px 20px;
-  border-radius: 1em;
-  position: relative;
-  top: -4px;
-}
-.discord-button:hover {
-  text-decoration: none;
 }
 
 @keyframes fadeIn {

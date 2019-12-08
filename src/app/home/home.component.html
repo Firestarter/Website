@@ -15,33 +15,26 @@
       </div>
     </div>
     <div class="col-xl-3 sidebar">
-      <h5 class="sidebar-online">🌠 {{online}} players online</h5>
+      <h5 class="sidebar-online">🍉 {{online}} players online</h5>
       <div class="discord-sidebar">
-        <img class="discord-logo" src="https://discordapp.com/assets/35d75407bd75d70e84e945c9f879bab8.svg">
-        <a class="discord-button" href="https://discord.gg/yzj9HrF">Join</a>
+        <a href="https://discord.gg/yzj9HrF" data-toggle="tooltip" data-placement="top" title="Click to join the Discord">
+          <img class="discord-logo" src="https://discordapp.com/assets/35d75407bd75d70e84e945c9f879bab8.svg">
+          <p class="discord-online" >{{discordonline}} online</p>
+        </a>
       </div>
-      <div class="sidebar-card">
+      <div class="voter-card sidebar-card">
         <h1 class="voter-title">Top voter</h1>
         <div class="row">
-          <div class="col-4 col-md-12 col-lg-12 col-xl-4">
+          <div class="col-3 col-md-12 col-lg-12 col-xl-3">
             <img class="voter-head" src="https://minotar.net/helm/{{voteruuid}}/100.png">
           </div>
-          <div class="col-8 col-md-12 col-lg-12 col-xl-8">
+          <div class="col-9 col-md-12 col-lg-12 col-xl-9">
             <p class="voter-name">{{votername}}</p>
-            <p class="voter-votes">{{votervotes}}</p>
+            <p class="voter-votes">{{votervotes}} votes</p>
           </div>
         </div>
       </div>
-      <!--<iframe class="discord-card" src="https://discordapp.com/widget?id=609452308161363995&theme=dark" width="100%" height="400" allowtransparency="true" frameborder="0"></iframe>-->
 </div>
   </div>
 </div>
 <footer></footer>
-
-<!--<div class="container-fluid">
-  <div class="wrapper">
-    <img class="banner" src="../assets/img/banner.png">
-    <a class="ip-button" id="ip" [ngStyle]="{'background-color': color}"  (click)="copyIP()">🔥 {{ ip }}</a>
-    <h6 class="counter">{{online}} folks online now.</h6>
-  </div>
-</div>-->
