@@ -1,16 +1,23 @@
 <header>
-  <ul class="navigation">
-    <!--<a [routerLink]="['/']"><img class="navigation-logo" src="../assets/img/logo.png"></a>
-    <li><a [routerLink]="['/vote']">Vote</a></li>
-    <li><a [routerLink]="['/guide']">Guide</a></li>
-    <li><a href="https://firestartermc.tebex.io">Donate</a></li>-->
-
-    <img class="logo" src="../assets/img/logo.png">
-  </ul>
+  <div class="navbar">
+    <nav class="navigation">
+      <!--<a [routerLink]="['/vote']">Vote</a>-->
+      <a href="https://firestartermc.github.io/vote">Vote</a>
+      <a [routerLink]="['/']"><img class="logo" src="../assets/img/logo.png"></a>
+      <a [routerLink]="['/staff']">Staff</a>
+    </nav>
+  </div>
+  <div class="banner">
+    <div class="hero">
+      <h1 class="banner-header">Firestarter</h1>
+      <h3 class="banner-description">A friendly, community-driven survival realm.</h3>
+      <a class="ip-button" id="ip" [ngStyle]="{'background-color': color}" (click)="copyIP()">🌈 {{ ip }}</a>
+    </div>
+  </div>
 </header>
-<main [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+<main class="content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
   <router-outlet #o="outlet"></router-outlet>
 </main>
 <footer class="footer">
-  <h1>Firestarter</h1>
+
 </footer>

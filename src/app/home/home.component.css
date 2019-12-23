@@ -1,44 +1,3 @@
-.banner {
-  background-color: #ff5757;
-  background-image: url('../../assets/img/banner-blurred.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  width: 100%;
-  display: block;
-  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.3);
-}
-.hero {
-  position: relative;
-  top: 70px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-.banner-header {
-  color: white;
-  font-weight: 700;
-  font-size: 40px;
-}
-.banner-description {
-  color: #EBEBEB;
-  font-size: 24px;
-  padding-bottom: 20px;
-}
-.content {
-  display: block;
-  margin: 0 auto;
-  background-color: #FBFBFB;
-  width: 70%;
-  height: auto;
-  color: white;
-  padding: 35px;
-  border-radius: 0.7em;
-  box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.03);
-  position: relative;
-  top: -200px;
-  transition: 0.3s;
-}
 .header {
   padding-bottom: 15px;
   font-weight: 700;
@@ -71,25 +30,6 @@
 .post-content {
   color: black;
   padding-top: 10px;
-}
-.ip-button {
-  text-align: center;
-  display: block;
-  max-width: 230px;
-  margin: 0 auto;
-  text-decoration: none;
-  padding: 5px 13px 6px 13px;
-  border-radius: 0.3em;
-  color: white !important;
-  font-weight: 600;
-  font-size: 18px;
-  box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.05);
-  transition: 0.3s;
-}
-.ip-button:hover {
-  cursor: pointer;
-  transform: translateY(1px);
-  box-shadow: 0 4px 6px rgba(50,50,93,.2), 0 1px 3px rgba(0,0,0,.10);
 }
 .counter {
   padding-top: 7px;
@@ -170,7 +110,7 @@
 }
 
 /* Styles between extra small to large */
-@media (max-width: 1199.98px) {
+@media (max-width: 1400px) {
   .content {
     width: 100%;
     padding: 30px 25px;

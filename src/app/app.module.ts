@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
+import { StaffComponent } from './staff/staff.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'staff',
+    component: StaffComponent
+  },
+  {
     path: '404',
     component: NotFoundComponentComponent
   },
@@ -58,7 +63,8 @@ const routes: Routes = [
     GuideComponent,
     PunishmentsComponent,
     NotFoundComponentComponent,
-    LoginComponent
+    LoginComponent,
+    StaffComponent
   ],
   imports: [
     BrowserModule,

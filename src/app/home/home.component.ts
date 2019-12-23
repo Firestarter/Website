@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Config } from 'codelyzer';
 import { AngularFirestore } from 'angularfire2/firestore';
@@ -23,8 +23,6 @@ export class HomeComponent implements OnInit {
 
   discordonline = 0;
 
-  ip = 'firestartermc.com';
-  color = '#FF5B5B';
   online = 0;
   tempcontent = '### So, why did we make this site?\n' +
     'Because why not? This is the new site and it is very cool and you are encouraged to use it because it is so cool\n' +
@@ -60,31 +58,6 @@ export class HomeComponent implements OnInit {
             this.votername = d['name'];
           });
       });
-  }
-
-  copyIP() {
-    // Copy the IP
-    const selBox = document.createElement('textarea');
-    selBox.style.position = 'fixed';
-    selBox.style.left = '0';
-    selBox.style.top = '0';
-    selBox.style.opacity = '0';
-    selBox.value = this.ip;
-    document.body.appendChild(selBox);
-    selBox.focus();
-    selBox.select();
-    document.execCommand('copy');
-    document.body.removeChild(selBox);
-
-    // Set field to "Copied IP"
-    this.ip = 'Copied IP!';
-    this.color = '#51DF56';
-
-    // Reset back to normal after 2 seconds
-    setTimeout(() => {
-      this.ip = 'firestartermc.com';
-      this.color = '#FF5B5B';
-    }, 2000);
   }
 
   ngOnInit() {

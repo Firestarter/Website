@@ -10,10 +10,6 @@ html, body {
   background-color: #EBEBEB;
   margin: 0;
 }
-router-outlet ~ * {
-  position: absolute;
-  width: 100%;
-}
 
 code {
   color: #FF8C27;
@@ -36,4 +32,12 @@ code {
   background: #FF5B5B;
   border-radius: 1em;
   transition: 0.3s;
+}
+
+/* Highlight color */
+::selection {
+  background: #FFB1B1;
+}
+::-moz-selection {
+  background: #FFB1B1;
 }
