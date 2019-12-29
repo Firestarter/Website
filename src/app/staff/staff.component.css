@@ -8,14 +8,18 @@
 }
 .head {
   border-radius: 0.5em;
-  margin: 0 auto;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 .name {
-  color: black;
+  color: #393939;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.quote {
+  color: #555555;
+  font-size: 0.9em;
   text-align: center;
 }
 .badge {
@@ -31,6 +35,13 @@
 .badge-mod {
   background-color: #FF8E51;
 }
+.badge-discord-mod {
+  background-color: #63CDFF;
+}
 .badge-architect {
   background-color: #31FF95;
+}
+.separator {
+  background-color: #DBDBDB;
+  width: 95%;
 }
