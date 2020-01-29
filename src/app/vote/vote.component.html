@@ -1,1 +1,5 @@
-<iframe iframe-set-dimensions-onload [src]="page | safe"></iframe>
+<div class="controls">
+  <p class="button left-button" (click)="previousPage()"><i class="material-icons">keyboard_arrow_left</i></p>
+  <p class="button right-button" (click)="nextPage()"><i class="material-icons">keyboard_arrow_right</i></p>
+</div>
+<iframe [src]="url | safe"></iframe>

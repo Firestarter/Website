@@ -27,11 +27,29 @@ export class VoteComponent implements OnInit {
     'https://minecraftlist.org/vote/13840',
     'https://www.trackyserver.com/server/firestarter-a-1-14-4-survival-realm-349950'
   ];
-  page = this.pages[0];
+  url;
+  page;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.url = this.pages[0];
+    this.page = 1;
   }
 
+  hasPreviousPage() {
+    return !(this.page - 1 < this.pages.length);
+  }
+
+  hasNextPage() {
+    return this.page + 1 < this.pages.length;
+  }
+
+  previousPage() {
+    this.url = this.pages[++this.page];
+  }
+
+  nextPage() {
+    this.url = this.pages[++this.page];
+  }
 }

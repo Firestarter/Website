@@ -4,22 +4,28 @@
   font-size: 20px;
   color: #727272;
 }
+.content-header {
+  color: #727272;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-left: 0.1em;
+}
 .sidebar-card {
   background-color: white;
-  padding: 20px;
+  padding: 1.2em;
   box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.02);
   border-radius: 0.4em;
   margin-bottom: 25px;
 }
 .post {
   background-color: white;
-  padding: 35px;
-  margin-bottom: 25px;
-  box-shadow: 0 3px 19px 0 rgba(0, 0, 0, 0.02);
   border-radius: 0.7em;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.02);
+  margin-bottom: 0em;
+  padding: 1.3em;
 }
 .title {
-  background-color: #ff626b;
+  background-color: #FF5166;
   padding: 10px;
   border-radius: 0.3em;
   font-size: 18px;
@@ -29,7 +35,6 @@
 }
 .post-content {
   color: black;
-  padding-top: 10px;
 }
 .counter {
   padding-top: 7px;

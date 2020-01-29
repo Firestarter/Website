@@ -1,12 +1,25 @@
 <header>
-  <div class="navbar">
-    <nav class="navigation">
-      <!--<a [routerLink]="['/vote']">Vote</a>-->
-      <a href="https://firestartermc.github.io/vote">Vote</a>
-      <a [routerLink]="['/']"><img class="logo" src="../assets/img/logo.png"></a>
-      <a [routerLink]="['/staff']">Staff</a>
-    </nav>
+  <div class="navigation">
+    <div class="navigation-wrapper container">
+      <div class="navigation-left">
+        <a class="navigation-button" routerLink="/">
+          <img class="navigation-logo" src="/assets/img/logo.png">
+        </a>
+      </div>
+      <div class="navigation-right">
+        <a class="navigation-button" href="https://firestartermc.github.io/vote">
+          <p class="navigation-button-text">Vote</p>
+        </a>
+        <a class="navigation-button" href="http://firestartermc.tebex.io/">
+          <p class="navigation-button-text">Store</p>
+        </a>
+        <a class="navigation-button" routerLink="staff">
+          <p class="navigation-button-text">Staff</p>
+        </a>
+      </div>
+    </div>
   </div>
+
   <div class="banner">
     <div class="hero">
       <h1 class="banner-header">Firestarter</h1>
@@ -15,9 +28,12 @@
     </div>
   </div>
 </header>
-<main class="content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+<main class="content container" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
   <router-outlet #o="outlet"></router-outlet>
 </main>
 <footer class="footer">
-  <h1 class="footer-heading">🔥</h1>
+  <div class="footer-wrapper container">
+    <p class="footer-copyright">🔥 Firestarter © 2019-2020</p>
+    <p class="footer-disclaimer">We are not affiliated with Mojang AB.</p>
+  </div>
 </footer>

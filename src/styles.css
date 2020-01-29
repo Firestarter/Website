@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Karla:400,500,600,700&display=swap');
 
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/assets/font/Metropolis-Regular.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/assets/font/Metropolis-Medium.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/assets/font/Metropolis-SemiBold.woff2') format('woff2');
+  font-weight: 700;
+}
+
 * {
   font-family: 'Karla', sans-serif;
 }

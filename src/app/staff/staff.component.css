@@ -5,6 +5,8 @@
   width: 200px;
   display: inline-block;
   margin: 10px;
+  height: 230px;
+  vertical-align: top;
 }
 .head {
   border-radius: 0.5em;

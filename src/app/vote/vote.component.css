@@ -1,4 +1,35 @@
 iframe {
   border: none;
   width: 100%;
+  height: 700px;
+  border-radius: 0.7em;
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #ff5757;
+  border-radius: 50px;
+  padding: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(50,50,93,.05), 0 1px 3px rgba(0,0,0,.2);;
+}
+.button i {
+  color: white;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  user-select: none;
+}
+.left-button {
+  position: absolute;
+  left: -25px;
+  top: 30%;
+  z-index: 200;
+}
+.right-button {
+  position: absolute;
+  right: -25px;
+  top: 30%;
+  z-index: 500;
 }

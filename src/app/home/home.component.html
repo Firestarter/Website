@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-xl-9">
+    <h1 class="content-header">Announcements</h1>
     <div class="post" *ngFor="let post of posts | async">
       <h2 class="title">{{post.title}}</h2>
-
       <div markdown [data]="post.content" class="post-content" ngPreserveWhitespaces></div>
     </div>
   </div>
   <div class="col-xl-3 sidebar">
-    <h5 class="sidebar-online">🍉 {{online}} players online</h5>
+    <h5 class="sidebar-online">🚀 {{online}} players online</h5>
     <div class="discord-sidebar">
       <a href="https://discord.gg/yzj9HrF" data-toggle="tooltip" data-placement="top" title="Click to join the Discord">
         <img class="discord-logo" src="https://discordapp.com/assets/35d75407bd75d70e84e945c9f879bab8.svg">
@@ -22,18 +22,5 @@
         <p class="voter-votes"><span class="voter-votes-inner">{{votervotes}} votes</span></p>
       </div>
     </div>
-    <!--<div class="open-source-sidebar">
-      <a href="https://github.com/firestartermc/" data-toggle="tooltip" data-placement="top"
-         title="Click to visit the GitHub">
-        <div class="row">
-          <div class="col-3 col-md-12 col-lg-12 col-xl-3">
-            <img class="github-logo" src="https://image.flaticon.com/icons/png/512/25/25231.png">
-          </div>
-        </div>
-        <div class="col-9 col-md-12 col-lg-12 col-xl-9">
-          <p class="github-text">We're proudly open-source!</p>
-        </div>
-      </a>
-    </div>-->
   </div>
 </div>
