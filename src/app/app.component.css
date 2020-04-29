@@ -21,16 +21,16 @@ main {
   right: 0;
 }
 .navigation-button {
-  background-color: #313131;
+  background-color: #3D3D3D;
   border-radius: 2em;
   display: inline-block;
   height: 2.2em;
-  margin: 0 0.3em;
+  margin: 0 0.2em;
   padding: 0 1.3em;
   transition: 0.3s;
 }
 .navigation-button:hover {
-  background-color: #404040;
+  background-color: #434343;
   text-decoration: none;
 }
 .navigation-button-text {
@@ -50,23 +50,21 @@ main {
 }
 .content {
   border-radius: 0.5em;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
   display: block;
   margin: 0 auto;
-  background-color: #F9F9F9;
+  background-color: #FAFAFA;
   width: 70%;
   height: auto;
   color: white;
   padding: 25px;
   position: relative;
-  top: -3em;
+  top: -3.5em;
   transition: 0.3s;
 }
 
-
 .banner {
   background-color: #ff5757;
-  background-image: url('../assets/img/banner-blurred.png');
+  background-image: url('../assets/img/tiles.webp');
   background-repeat: no-repeat;
   background-size: cover;
   height: 22em;
@@ -84,12 +82,12 @@ main {
 .banner-header {
   color: white;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 1.9em;
 }
 .banner-description {
   color: #EBEBEB;
-  font-size: 24px;
-  padding-bottom: 20px;
+  font-size: 1.3em;
+  padding-bottom: 1em;
 }
 .ip-button {
   text-align: center;
@@ -111,14 +109,15 @@ main {
   box-shadow: 0 4px 6px rgba(50,50,93,.2), 0 1px 3px rgba(0,0,0,.10);
 }
 .footer {
-  background-color: #DADADA;
-  border-top: 0.5em solid #DFDFDF;
+  background-color: #DCD0CC;
+  border-top: 1em solid #E6DBD7;
   width: 100%;
 }
 .footer-wrapper {
   padding: 2em;
 }
 .footer-copyright {
+  color: #646464;
   font-size: 1em;
   font-weight: 600;
   margin: 0;
@@ -126,10 +125,10 @@ main {
 }
 .footer-disclaimer {
   color: #808080;
+  font-size: 1em;
   margin: 0;
   padding: 0;
 }
-
 
 @keyframes fadeIn {
   0% {

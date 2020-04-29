@@ -50,10 +50,10 @@ export class HomeComponent implements OnInit {
     // Update voter information
     this.http.get('https://api.firestartermc.com/votes')
       .subscribe((data: Config) => {
-        this.voteruuid = data[0]['uuid'];
+        this.voteruuid = data[0]['_id'];
         this.votervotes = data[0]['votes'];
 
-        this.http.get('https://api.minetools.eu/uuid/e4ae86d880404e76a3b3ba0fba1caf69')
+        this.http.get(`https://api.minetools.eu/uuid/${data[0]['_id'].replace(/-/g, "")}`)
           .subscribe((d: Config) => {
             this.votername = d['name'];
           });

@@ -3,7 +3,7 @@
     <h1 class="content-header">Announcements</h1>
     <div class="post" *ngFor="let post of posts | async">
       <h2 class="title">{{post.title}}</h2>
-      <div markdown [data]="post.content" class="post-content" ngPreserveWhitespaces></div>
+      <markdown [data]="post.content" class="post-content" ngPreserveWhitespaces></markdown>
     </div>
   </div>
   <div class="col-xl-3 sidebar">
@@ -15,8 +15,7 @@
       </a>
     </div>
     <div class="voter-card sidebar-card">
-      <h1 class="voter-title">Top voter</h1>
-      <img class="voter-head" src="https://minotar.net/helm/{{voteruuid}}/100.png">
+      <img class="voter-head" src="https://visage.surgeplay.com/bust/{{voteruuid}}">
       <div class="voter-content">
         <p class="voter-name">{{votername}}</p>
         <p class="voter-votes"><span class="voter-votes-inner">{{votervotes}} votes</span></p>

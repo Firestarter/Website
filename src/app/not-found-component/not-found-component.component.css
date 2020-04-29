@@ -1,12 +1,11 @@
-.container {
-  padding: 20px;
-}
-#head {
-  color: white;
+#heading {
+  color: #404040;
   text-align: center;
-  font-size: 90px;
+  font-size: 2em;
+  font-weight: 600;
 }
 #smalltext {
-  color: white;
+  color: #565656;
   text-align: center;
+  font-size: 1em;
 }
