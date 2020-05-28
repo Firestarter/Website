@@ -3,14 +3,14 @@
     <div class="navigation-wrapper container">
       <div class="navigation-left">
         <a class="navigation-button" routerLink="/">
-          <img class="navigation-logo" src="/assets/img/logo.png">
+          <img class="navigation-logo" src="/assets/img/logo-sticker.png" alt="Firestarter">
         </a>
       </div>
       <div class="navigation-right">
-        <a class="navigation-button" href="https://firestartermc.github.io/vote">
+        <a class="navigation-button" href="https://vote.firestartermc.com" target="_blank">
           <p class="navigation-button-text">Vote</p>
         </a>
-        <a class="navigation-button" href="http://firestartermc.tebex.io/">
+        <a class="navigation-button" href="http://store.firestartermc.com" target="_blank">
           <p class="navigation-button-text">Store</p>
         </a>
         <a class="navigation-button" routerLink="staff">
@@ -22,8 +22,8 @@
   <div class="banner">
     <div class="hero">
       <h1 class="banner-header">Firestarter</h1>
-      <h3 class="banner-description">A friendly, community-driven survival realm.</h3>
-      <a class="ip-button" id="ip" [ngStyle]="{'background-color': color}" (click)="copyIP()">🌈 {{ ip }}</a>
+      <h3 class="banner-description">A community-driven survival realm.</h3>
+      <a class="ip-button" id="ip" [ngStyle]="{'background-color': color}" (click)="copyIP()">🤙 {{ ip }}</a>
     </div>
   </div>
 </header>
@@ -34,5 +34,10 @@
   <div class="footer-wrapper container">
     <p class="footer-copyright">🔥 Firestarter © 2019-2020</p>
     <p class="footer-disclaimer">We are not affiliated with Mojang AB.</p>
+
+    <div class="footer-bottom">
+      <a class="footer-link" href="/privacy">Privacy Policy</a>
+      <a class="footer-link" href="https://github.com/Firestarter/website" target="_blank">This site is open source!</a>
+    </div>
   </div>
 </footer>

@@ -1,0 +1,15 @@
+.wrapper {
+  padding: 0.7em;
+}
+.heading {
+  color: #535353;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.disclaimer {
+  color: #6A6A6A;
+  font-size: 1em;
+}
+.policy {
+  color: #535353;
+}

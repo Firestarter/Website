@@ -17,6 +17,8 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { environment } from '../environments/environment';
 import { StaffComponent } from './staff/staff.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { RulesComponent } from './rules/rules.component';
 
 const routes: Routes = [
   {
@@ -27,6 +29,14 @@ const routes: Routes = [
   {
     path: 'vote',
     component: VoteComponent
+  },
+  {
+    path: 'privacy',
+    component: PrivacyComponent
+  },
+  {
+    path: 'rules',
+    component: RulesComponent
   },
   {
     path: 'guide',
@@ -64,7 +74,9 @@ const routes: Routes = [
     PunishmentsComponent,
     NotFoundComponentComponent,
     LoginComponent,
-    StaffComponent
+    StaffComponent,
+    PrivacyComponent,
+    RulesComponent
   ],
   imports: [
     BrowserModule,
